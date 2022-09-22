@@ -102,11 +102,11 @@ else{
     if($mig_vms -ne "0"){
         $body = $mig_vms.Name | Out-String
 
-        Send-MailMessage -From 'migrated-as-ps@hepsiburada.com' -SmtpServer 'SMTP SERVER' -To 'MAIL ADDRESS' -Subject 'SUBJECT' -Body $body -Encoding utf8
+        Send-MailMessage -From 'migrated@xxx.com' -SmtpServer 'SMTP SERVER' -To 'MAIL ADDRESS' -Subject 'SUBJECT' -Body $body -Encoding utf8
     }
     else{
         $body = "BODY MESSAGE"
-        Send-MailMessage -From 'migrated-as-ps@hepsiburada.com' -SmtpServer 'SMTP SERVER' -To 'MAIL ADDRESS' -Subject 'SUBJECT' -Body $body -Encoding utf8
+        Send-MailMessage -From 'migrated@xxx.com' -SmtpServer 'SMTP SERVER' -To 'MAIL ADDRESS' -Subject 'SUBJECT' -Body $body -Encoding utf8
 
     }
 
